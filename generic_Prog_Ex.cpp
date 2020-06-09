@@ -25,6 +25,7 @@ int main()
 #include<iostream>
 using namespace std;
 
+// template<class T> will work same as the template<typename T>
 template<typename T>
 int search(T arr[],int n, T key)
 {
@@ -39,7 +40,7 @@ int search(T arr[],int n, T key)
 int main()
 {
     float f[] = {1.2,2.5,3.5,4.8,5.4};
-    float key =2.55;
+    float key =2.5;
     cout<<search(f,5,key);
     return 0;
 }
